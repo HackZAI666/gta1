@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My GTA Web</title>
+</head>
+<body>
+
+<canvas id="canvas" width="640" height="400"></canvas>
+
+<script src="browserfs.min.js"></script>
+<script src="jszip.min.js"></script>
+<script src="jszip_utils.min.js"></script>
+<script src="loader.js"></script>
+<script src="dosbox.js"></script>
+
+<script>
+var emulator = new Emulator(
+  document.querySelector("#canvas"),
+  null,
+  new DosBoxLoader(
+    DosBoxLoader.emulatorJS("dosbox.js"),
+    DosBoxLoader.mountZip("c", DosBoxLoader.fetchFile("GTA", "gta.zip")),
+    DosBoxLoader.startExe("gta.exe")
+  )
+);
+
+emulator.start();
+</script>
+
+</body>
+</html>

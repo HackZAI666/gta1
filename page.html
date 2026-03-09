@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="AdrhcDGXv2s2s2W4y0ZYuQXSOFMkMvRoDRxJDPvu" />
+<title>Play Grand Theft Auto online - PlayDOSGames.com</title>
+<script src="https://www.playdosgames.com/js/app.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.playdosgames.com/css/app.css" media="all">
+<meta name="author" content="playdosgames.com">
+<script type="application/ld+json">
+    
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.playdosgames.com/",
+        "name": "Play DOS Games .com"
+    }
+    
+</script>
+    <link rel="canonical" href="https://www.playdosgames.com/" />
+    <meta property="og:title" content="Play Grand Theft Auto online - Play DOS Games .com" />
+    <meta name="description" content="Play Grand Theft Auto online - PlayDOSGames.com. Download or play DOS games online, choose from more than hundreds of DOS games. Relive great memories and play original games in your browser now!" />
+    <meta property="og:description" content="Play Grand Theft Auto online - PlayDOSGames.com. Download or play DOS games online, choose from more than hundreds of DOS games. Relive great memories and play original games in your browser now!" />
+    <meta property="og:url" content="https://www.playdosgames.com/" />
+    <meta property="og:image" content="https://www.playdosgames.com/assets/pdg_floppy_icon.png" />
+    <meta property="og:image:secure_url" content="https://www.playdosgames.com/assets/pdg_floppy_icon.png" />
+    <meta property="og:image:width" content="64" />
+    <meta property="og:image:height" content="64" />
+    <meta name="twitter:description" content="Play Grand Theft Auto online - Play DOS Games .com" />
+    <meta name="twitter:image" content="https://www.playdosgames.com/assets/pdg_floppy_icon.png" />
+    <meta name="twitter:title" content="Play Grand Theft Auto online - Play DOS Games .com" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Play DOS Games .com" />
+<meta property="article:publisher" content="https://www.facebook.com/PlayDosGames" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@PlayDOSGames" />
+<meta name="twitter:creator" content="@PlayDOSGames" />
+
+<link rel="shortcut icon" type="image/png" href="/assets/pdg_floppy_icon_nb.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2731665086593658" crossorigin="anonymous"></script>
+
+<!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}dialog#livewire-error::backdrop {background-color: rgba(0, 0, 0, .6);}</style>
+</head>
+<body class=" bg-black ">
+
+    <header class="bg-black py-4">
+    <div class="container d-flex flex-row justify-content-between align-items-center">
+        <div>
+            <div class="position-relative" id="logo-img">
+                <span class="d-inline-block" style="background-image:url('/images/pdglogo_hover.png')">
+                  <a href="/" class="stretched-link"><img src="https://www.playdosgames.com/images/pdglogo.png" alt=""></a>
+                </span>
+            </div>
+        </div>
+        <div class="d-none d-md-block">
+                                        <div class="text-end">
+                    <div class="small text-secondary">Save your games online</div>
+                    <div id="header-auth">
+                        <a href="https://www.playdosgames.com/login">Login or create account</a>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</header>
+                <main id="screen" class="container my-5 px-0">
+        <article class="position-relative mx-auto w-640">
+            <canvas id="canvas" style="width: 640px; height: 400px; display: block; margin: 0; padding: 0;" class="mx-auto"/>
+            <script type="text/javascript" src="https://www.playdosgames.com/assets/play/es6-promise.js"></script>
+            <script type="text/javascript" src="https://www.playdosgames.com/assets/play/browserfs.min.js"></script>
+            <script type="text/javascript" src="https://www.playdosgames.com/assets/play/loader.js?v=1"></script>
+            <script type="text/javascript" src="https://www.playdosgames.com/assets/play/jszip.min.js"></script>
+            <script type="text/javascript" src="https://www.playdosgames.com/assets/play/jszip_utils.min.js"></script>
+            <script type="text/javascript">
+                var emulator = new Emulator(document.querySelector("#canvas"),
+                    null,
+                    new DosBoxLoader(
+                        DosBoxLoader.emulatorJS("https://www.playdosgames.com/assets/play/dosbox.js"),
+                        DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
+                        DosBoxLoader.nativeResolution(640, 480),
+                        DosBoxLoader.mountZip(
+                            "c", DosBoxLoader.fetchFile("Game config", "https://www.playdosgames.com/assets/play/pdgstart.zip")
+                        ),
+                                                    DosBoxLoader.mountZip(
+                                "d", DosBoxLoader.fetchFile("Game files", "https://www.playdosgames.com/play/grand-theft-auto/zip")
+                            ),
+                                                DosBoxLoader.startExe("pdgstart 50000 gtados"),
+                                                    DosBoxLoader.fileSystemKey("grand-theft-auto")
+                                            )
+                )
+                emulator.start({waitAfterDownloading: false});
+
+                function locateAdditionalFiles(filename) {
+                    if (filename === "dosbox.html.mem") {
+                        return "https://www.playdosgames.com/assets/play/dosbox.html.mem";
+                    }
+                    return filename;
+                }
+            </script>
+        </article>
+        <div class="mt-5 mb-4 d-flex justify-content-center">
+            <a href="https://www.playdosgames.com/online/grand-theft-auto/" class="btn btn-black d-flex flex-column align-items-center gap-2 px-4 pt-3 font-monospace">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+                Game page
+            </a>
+                        <button onclick="emulator.requestFullScreen()" class="btn btn-black d-flex flex-column align-items-center gap-2 px-4 pt-3 font-monospace">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
+                    <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+                Fullscreen
+            </button>
+            <button id="soundButton" class="btn btn-black px-4 pt-3 font-monospace">
+                <span id="mute" class="d-flex flex-column align-items-center gap-2 d-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                        <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                    </svg>
+                    Mute
+                </span>
+                <span id="unmute" class="d-flex flex-column align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+                        <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                    Unmute
+                </span>
+            </button>
+        </div>
+        <div id="notification"></div>
+        <script type="text/javascript">
+            $('#soundButton').click(function() {
+                if(SDL2.audioContext.state == "suspended") {
+                    SDL2.audioContext.resume();
+                    document.getElementById("unmute").classList.toggle("d-none");
+                    document.getElementById("mute").classList.toggle("d-none");
+                } else {
+                    SDL2.audioContext.suspend();
+                    document.getElementById("unmute").classList.toggle("d-none");
+                    document.getElementById("mute").classList.toggle("d-none");
+                }
+            });
+
+            this.addEventListener('gameStarted', function(e) {
+                if(emulator.isMuted() === true) {
+                    document.getElementById("unmute").classList.toggle("d-none");
+                    document.getElementById("mute").classList.toggle("d-none");
+                }
+            })
+        </script>
+            </main>
+    <script src="/livewire/livewire.min.js?id=0f6341c0"   data-csrf="AdrhcDGXv2s2s2W4y0ZYuQXSOFMkMvRoDRxJDPvu" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+</body>
+</html>
